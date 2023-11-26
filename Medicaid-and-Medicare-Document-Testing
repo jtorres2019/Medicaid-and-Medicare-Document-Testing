@@ -1,0 +1,60 @@
+-- SQL script for Medicaid and Medicare Compliance Testing
+
+-- Description: Successfully tested Medicaid and Medicare documents, ensuring compliance with industry standards and regulations.
+
+-- Create a table to store test case information
+CREATE TABLE TestCase (
+    TestCaseID INT PRIMARY KEY,
+    TestCaseName VARCHAR(255),
+    TestDescription TEXT
+);
+
+-- Insert test case data
+INSERT INTO TestCase (TestCaseID, TestCaseName, TestDescription)
+VALUES
+    (1, 'Test 1', 'Utilized Jira for test case management, defect tracking, and project coordination.'),
+    (2, 'Test 2', 'Employed SQL queries to perform database testing, data validation, and integrity checks.'),
+    (3, 'Test 3', 'Collaborated with cross-functional teams in a Macess DevOps environment to streamline testing processes and improve efficiency.'),
+    (4, 'Test 4', 'Actively participated in Agile sprint meetings, providing valuable input for sprint planning and progress tracking.'),
+    (5, 'Test 5', 'Conducted comprehensive regression testing to validate software changes and updates.'),
+    (6, 'Test 6', 'Identified, documented, and prioritized defects, working closely with developers to resolve issues promptly.'),
+    (7, 'Test 7', 'Developed and executed test plans, test cases, and test scripts, ensuring thorough test coverage.'),
+    (8, 'Test 8', 'Contributed to the continuous improvement of testing methodologies and processes.');
+
+-- Create a table to store achievements
+CREATE TABLE Achievements (
+    AchievementID INT PRIMARY KEY,
+    AchievementDescription TEXT
+);
+
+-- Insert achievement data
+INSERT INTO Achievements (AchievementID, AchievementDescription)
+VALUES
+    (1, 'Improved defect resolution time by 20% through efficient defect tracking and collaboration.'),
+    (2, 'Enhanced testing efficiency, resulting in a 15% reduction in testing cycle time.');
+
+-- Create a table to store skills
+CREATE TABLE Skills (
+    SkillID INT PRIMARY KEY,
+    SkillName VARCHAR(255)
+);
+
+-- Insert skill data
+INSERT INTO Skills (SkillID, SkillName)
+VALUES
+    (1, 'Agile Methodologies'),
+    (2, 'DevOps'),
+    (3, 'Test Case Management'),
+    (4, 'Regression Testing'),
+    (5, 'Defect Tracking'),
+    (6, 'Jira'),
+    (7, 'SQL');
+
+-- Display test case information
+SELECT * FROM TestCase;
+
+-- Display achievements
+SELECT * FROM Achievements;
+
+-- Display skills
+SELECT * FROM Skills;
